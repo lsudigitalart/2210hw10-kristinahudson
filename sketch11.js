@@ -25,12 +25,12 @@ function Particle(tempX, tempY, tempR) {
   this.speed = 1;
 
   this.move = function() {
-    this.x += random(-this.speed, this.speed);
+    this.x += random(-this.speed, this.speed)*50;
     this.y += random(-this.speed, this.speed);
   };
 
   this.display = function() {
-    fill(78, 220, 202, 200);
+    fill(78, 220, 202, 230);
     noStroke();
     ellipse(this.x, this.y, this.r, this.r);
   };
